@@ -1,0 +1,21 @@
+{
+    "name": "Netflix Intro Skipper",
+    "version": "1.0.0",
+    "description": "Automatically skips Netflix intros",
+    "manifest_version": 3,
+    "author": "https://github.com/arduino12",
+	"update_url": "https://github.com/arduino12/netflix-intro-skipper",
+	"icons": {
+		"48": "arrow-47-48.png"
+	},
+    "content_scripts": [
+        {
+            "js": [
+                "scripts.js"
+            ],
+            "matches": [
+                "https://www.netflix.com/*"
+            ]
+        }
+    ]
+}
